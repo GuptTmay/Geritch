@@ -20,7 +20,6 @@ import award05 from '../assets/award05.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
-import instagram from '../assets/instagram.svg'
 
 export default {
   bg,
@@ -45,5 +44,4 @@ export default {
   sign,
   quote,
   gericht,
-  instagram,
 };

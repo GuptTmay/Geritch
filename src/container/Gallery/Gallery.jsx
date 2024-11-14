@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import images from "../../constants/images"
+import { FiInstagram } from "react-icons/fi";
 
 const Gallery = () => (
   <div className='px-4 sm:px-8 py-8 lg:pr-0 bg-black flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-4'>
@@ -16,9 +17,9 @@ const Gallery = () => (
 
     <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-6 w-full">
       <GalleryImg imagePath={images.gallery04} />
-      <GalleryImg imagePath={images.gallery03} className="hidden sm:block"/>
-      <GalleryImg imagePath={images.gallery02} className="hidden sm:block"/>
-      <GalleryImg imagePath={images.gallery01} className="hidden sm:block"/>
+      <GalleryImg imagePath={images.gallery03} className="hidden sm:block" />
+      <GalleryImg imagePath={images.gallery02} className="hidden sm:block" />
+      <GalleryImg imagePath={images.gallery01} className="hidden sm:block" />
     </div>
   </div>
 );
@@ -28,7 +29,7 @@ function GalleryImg({ imagePath, className }) {
     <div className={"h-[17rem] w-44 bg-cover " + className} style={{ backgroundImage: `url(${imagePath})` }} >
       <div className="w-full h-full border-2 border-white border-opacity-20 hover:border-slate-700 hover:border-opacity-45">
         <div className="hover:bg-black hover:cursor-pointer w-full h-full hover:bg-opacity-70 flex justify-center items-center group">
-            <img className="w-10 hidden group-hover:block" src={images.instaLogo} alt="Instagram Logo" />
+          <FiInstagram className='w-10 hidden group-hover:block cursor-pointer' size="2rem" color='white' />
         </div>
       </div>
     </div>
